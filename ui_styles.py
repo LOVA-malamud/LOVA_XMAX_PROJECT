@@ -3,12 +3,12 @@ import streamlit as st
 def apply_custom_css():
     st.markdown("""
     <style>
-        /* Modern Financial Dark (OLED Style) */
+        /* Mat Gray & Gold Tech Max Theme */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@700&display=swap');
         
         .stApp { 
-            background: radial-gradient(circle at top right, #111111, #000000);
-            color: #E2E8F0; 
+            background: #121212;
+            color: #FFFFFF; 
             font-family: 'Inter', sans-serif; 
         }
         
@@ -16,14 +16,14 @@ def apply_custom_css():
         [data-testid="stMetric"] {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
             padding: 24px !important;
-            border-radius: 32px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
         }
         [data-testid="stMetric"]:hover { 
-            transform: translateY(-4px) scale(1.02);
+            transform: translateY(-2px);
             border-color: #D4AF37;
             background: rgba(255, 255, 255, 0.05);
         }
@@ -31,50 +31,45 @@ def apply_custom_css():
             color: #D4AF37 !important; 
             font-weight: 800 !important; 
             font-size: 2.2rem !important;
-            letter-spacing: -0.02em;
-            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
         }
         [data-testid="stMetricLabel"] { 
-            color: #94A3B8 !important; 
-            font-weight: 600 !important;
-            text-transform: uppercase;
-            font-size: 0.75rem !important;
-            letter-spacing: 0.1em;
+            color: #FFFFFF !important; 
+            font-weight: 500 !important;
+            opacity: 0.8;
         }
 
         /* Tech Max Header */
         .main-header { 
             font-family: 'Orbitron', sans-serif;
-            font-size: 3rem; 
-            background: linear-gradient(90deg, #D4AF37, #FFFFFF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 2.8rem; 
+            color: #D4AF37;
             font-weight: 800; 
             letter-spacing: 2px;
-            margin-bottom: 0px;
+            margin-bottom: 5px;
         }
         .sub-header { 
-            font-size: 0.85rem; 
-            color: #64748B; 
-            font-weight: 600;
+            font-size: 0.8rem; 
+            color: #FFFFFF; 
+            font-weight: 400;
+            opacity: 0.6;
             text-transform: uppercase;
-            letter-spacing: 0.3em;
-            margin-bottom: 40px;
+            letter-spacing: 0.2em;
+            margin-bottom: 30px;
         }
 
-        /* OLED Sidebar */
+        /* Sidebar Styling */
         section[data-testid="stSidebar"] { 
-            background-color: #050505; 
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: #0A0A0A; 
+            border-right: 1px solid rgba(212, 175, 55, 0.3);
         }
         
-        /* Glowing Health Bars */
+        /* Health Bars */
         .health-bar-container {
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 24px;
+            background: #363636;
+            border-radius: 16px;
             margin-bottom: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
         .health-bar-label { 
             font-size: 0.8rem; 
@@ -96,16 +91,22 @@ def apply_custom_css():
             box-shadow: 0 0 10px currentColor;
         }
         
+        /* Selectbox & Inputs */
+        div[data-baseweb="select"] > div {
+            background-color: #363636 !important;
+            border-color: rgba(212, 175, 55, 0.3) !important;
+        }
+        
         /* Premium Buttons */
         .stButton>button {
             background: #D4AF37;
-            color: #000;
+            color: #1E1E1E;
             border: none;
-            border-radius: 20px;
+            border-radius: 12px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            padding: 14px 24px;
+            padding: 12px 24px;
             width: 100%;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
@@ -114,33 +115,11 @@ def apply_custom_css():
             transform: scale(1.02);
             box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
             background-color: #E5C158;
-        }
-
-        /* Segmented Control Tabs */
-        .stTabs [data-baseweb="tab-list"] { 
-            gap: 12px; 
-            padding: 6px;
-            background-color: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-        .stTabs [data-baseweb="tab"] {
-            background-color: transparent !important;
-            border-radius: 12px !important;
-            color: #64748B !important;
-            border: none !important;
-            font-weight: 600;
-            padding: 10px 20px;
-            transition: all 0.2s ease;
-        }
-        .stTabs [aria-selected="true"] { 
-            background-color: #D4AF37 !important;
-            color: #000 !important;
-            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+            border-color: #D4AF37;
         }
 
         /* Creative Accents */
-        hr { border-color: rgba(255, 255, 255, 0.05); }
+        hr { border-color: rgba(212, 175, 55, 0.1); }
         .stMarkdown code { background-color: rgba(255, 255, 255, 0.05); }
     </style>
     """, unsafe_allow_html=True)
