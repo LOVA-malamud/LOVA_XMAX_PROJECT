@@ -1,0 +1,43 @@
+# 2020 Yamaha XMAX 400 Technical Summary
+
+## Engine & Performance
+- **Displacement:** 395cc
+- **Type:** Single-cylinder, 4-stroke, Liquid-cooled, SOHC, 4-valve
+- **Bore x Stroke:** 83.0 mm x 73.0 mm
+- **Compression Ratio:** 10.6 : 1
+- **Max Power:** 24.5 kW (32.9 HP) @ 7,000 RPM
+- **Max Torque:** 36.0 Nm (3.7 kg-m) @ 6,000 RPM
+- **Fuel System:** Fuel Injection
+- **Ignition:** TCI
+
+## Chassis & Dimensions
+- **Frame:** Steel underbone
+- **Front Suspension:** Telescopic fork (110mm travel)
+- **Rear Suspension:** Unit Swing (92mm travel)
+- **Front Brake:** Hydraulic dual disc, Ø 267 mm
+- **Rear Brake:** Hydraulic single disc, Ø 267 mm
+- **Front Tire:** 120/70-15
+- **Rear Tire:** 150/70-13
+- **Total Length:** 2,185 mm
+- **Total Width:** 766 mm
+- **Total Height:** 1,415 mm
+- **Seat Height:** 800 mm
+- **Wet Weight:** 210 kg
+- **Fuel Tank:** 13 Liters
+
+## Fluids & Maintenance
+- **Engine Oil (Periodic):** 1.5 L
+- **Engine Oil (With Filter):** 1.6 L
+- **Transmission Oil:** 0.25 L
+- **Coolant:** 1.1 L
+- **Spark Plug:** NGK LMAR8A-9
+- **Spark Plug Gap:** 0.8–0.9 mm
+- **Idle Speed:** 1,400–1,600 RPM
+
+## Periodic Maintenance Schedule
+- **Engine Oil:** Change every 5,000 km
+- **Oil Filter:** Replace every 10,000 km
+- **V-Belt:** Replace every 20,000 km
+- **Air Filter:** Replace every 10,000 km
+- **Valve Clearance:** Check every 20,000 km
+- **Brake Fluid:** Change every 2 years

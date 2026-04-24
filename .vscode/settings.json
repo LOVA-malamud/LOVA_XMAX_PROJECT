@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:XMAX_project}/xmax_docs.docs/xmax_parts_database.db",
+            "name": "xmax_DB"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "xmax_parts",
+            "database": "${workspaceFolder:XMAX_project}/xmax_specs.db"
+        }
+    ]
+}

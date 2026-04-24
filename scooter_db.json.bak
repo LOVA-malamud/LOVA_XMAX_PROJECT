@@ -1,0 +1,75 @@
+{
+    "mileage": 64464,
+    "history": [
+        {
+            "date": "2026-04-17",
+            "task": "טיפול גדול ",
+            "km": 60000,
+            "cost": 500.0,
+            "notes": "oil change, filter oil, 2 air filter, timming belt , plug,"
+        },
+        {
+            "date": "2026-04-18",
+            "task": "engine oil ",
+            "km": 62890,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "oil filter",
+            "km": 62890,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "air filters",
+            "km": 62890,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "V-Belt",
+            "km": 62890,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "Spark Plug",
+            "km": 62890,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "Transmission Oil",
+            "km": 55000,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "Variator Weights",
+            "km": 64464,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "Brake Fluid ",
+            "km": 30000,
+            "cost": 0.0,
+            "notes": ""
+        },
+        {
+            "date": "2026-04-18",
+            "task": "Coolant",
+            "km": 35000,
+            "cost": 0.0,
+            "notes": ""
+        }
+    ]
+}
