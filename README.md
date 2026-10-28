@@ -1,0 +1,32 @@
+# XMAX 400 · Maintenance Dashboard
+
+A Streamlit prototype for scooter maintenance records, parts/specifications, fuel logs and an AI-assisted mechanic conversation.
+
+**Status:** prototype with incomplete dependency setup. Review the credential and data notes below before running it.
+
+## Code map
+
+| File | Responsibility |
+| --- | --- |
+| [xmax_app.py](xmax_app.py) | Dashboard and user interactions |
+| [database_manager.py](database_manager.py) | SQLite persistence and data access |
+| [config.py](config.py) | File locations and application configuration |
+| [ai_mechanic.py](ai_mechanic.py) | Gemini integration and database context |
+| [ui_styles.py](ui_styles.py) | Streamlit presentation |
+| [requirements.txt](requirements.txt) | Current dependency list |
+
+## Setup status
+
+The intended entry point is `python -m streamlit run xmax_app.py` from the repository root, inside a project-local virtual environment. **The current dependency list is incomplete:** `ai_mechanic.py` imports `google.generativeai`, whose package is not listed in `requirements.txt`. A clean installation and launch have not been verified. Resolve that compatibility issue before treating this as a reproducible setup.
+
+`config.py` points to the existing SQLite database under `xmax_docs.docs/`. Preserve the database and backup files. `test.py` initializes/inserts database content; it is not a harmless automated test command. Do not run database initializers against important records as part of setup experimentation.
+
+## Credentials and data
+
+A `.env` file is already tracked in this repository. Treat any credential it contains as potentially exposed: rotate it with its provider, update a local ignored environment, and remove the tracked file only through a reviewed change. An ignore rule alone does not remove tracked content or historical versions. Credential values must never appear in issues, screenshots or documentation.
+
+Tracked databases and the legacy backup require a separate privacy/data review. The AI integration can send conversation and selected database context to an external provider; review that flow before using private information. No live provider calls or database migrations were made during documentation review.
+
+## Learning and limitations
+
+The project explores a Streamlit UI, SQLite schema design, data visualization and an external AI integration. There is no verified automated test suite or production deployment. Maintenance values and generated advice are application content, not independently validated servicing instructions.
