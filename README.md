@@ -23,7 +23,13 @@ The intended entry point is `python -m streamlit run xmax_app.py` from the repos
 
 ## Credentials and data
 
-A `.env` file is already tracked in this repository. Treat any credential it contains as potentially exposed: rotate it with its provider, update a local ignored environment, and remove the tracked file only through a reviewed change. An ignore rule alone does not remove tracked content or historical versions. Credential values must never appear in issues, screenshots or documentation.
+The previously exposed Gemini API key was revoked in Google AI Studio, as confirmed by the repository owner on 29 October 2026. `.env` is no longer tracked; its local contents were preserved in the cleanup checkout. Historical commits still contain the revoked value because Git history has not been rewritten.
+
+Before pulling this change into another checkout that still tracks `.env`, save a private copy outside that checkout: Git may remove the tracked file when applying the deletion. Restore your saved configuration afterward as an ignored local file.
+
+For a new checkout, copy `.env.example` to `.env` only if `.env` does not already exist, then replace the placeholder locally with your own Gemini API key. For an existing checkout, preserve the existing `.env` and update only `GEMINI_API_KEY` locally when a replacement key is available. The revoked key will no longer authenticate AI requests. Never paste a replacement key into commits, PRs, logs or screenshots.
+
+`.gitignore` excludes `.env` and `.env.*`, while allowing placeholder-only example files. An ignore rule cannot remove content already committed; do not force-add local environment files.
 
 Tracked databases and the legacy backup require a separate privacy/data review. The AI integration can send conversation and selected database context to an external provider; review that flow before using private information. No live provider calls or database migrations were made during documentation review.
 
